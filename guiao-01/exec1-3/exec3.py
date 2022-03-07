@@ -1,10 +1,10 @@
 import sys
-import hashlib
+from Crypto.Hash import SHA256
 
 ficheiros = sys.argv[1:]
 
 for ficheiro in ficheiros:
-    h = hashlib.sha1()
+    h = SHA256.new()
     with open(ficheiro, 'rb') as f:
         buffer = f.read(512)
         while len(buffer) > 0:
