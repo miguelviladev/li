@@ -3,7 +3,7 @@ from fibonacci import fibonacci
 
 def test_none():
     print("Testa comportamento com n = None")
-    assert fibonacci() == ['NAN']
+    assert fibonacci() == ['NoArgs']
 
 def test_string():
     print("Testa comportamento com n = string")

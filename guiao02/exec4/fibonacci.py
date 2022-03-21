@@ -1,5 +1,5 @@
 def fibonacci(n=None):
-    if n is None: return ['NAN']
+    if n is None: return ['NoArgs']
     if not isinstance(n, int): return ['NAN']
     if n < 1:
         if n == 0: return [0]
