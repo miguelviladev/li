@@ -1,5 +1,7 @@
 from lxml import etree
 
+# Aleterei o exercicio 5 só porque prefiro trabalhar com json. A ideia é a mesma para o exercicio 3.
+
 def main():
     xml = etree.parse("conf.xml")
     root = xml.getroot()
