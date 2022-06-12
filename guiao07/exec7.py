@@ -9,4 +9,5 @@ def main(fnames):
 		print(" Imagem: %s" % fname)
 		print("   Mode: %s" % im.mode)
 		print() if fnames.index(fname) < len(fnames)-1 else ""
+        
 main(sys.argv)
