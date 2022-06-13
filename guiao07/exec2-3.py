@@ -29,5 +29,5 @@ def main(fnames):
         for s in [2, 1.5, 0.5, 0.25, 0.125]:
             dimension = (int(width*s), int(height*s))
             new_im = im.resize(dimension, metodo)
-            new_im.save(f"./out/exec2-{name}-{s}-{metodoi}.{ext}")
+            new_im.save(f"./out/exec2-3-{name}-{s}-{metodoi}.{ext}")
 main(sys.argv)
