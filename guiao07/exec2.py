@@ -8,14 +8,14 @@ def main(fnames):
     print("3 - Bicubic")
     print("4 - Antialias")
     print("Metodo de processamento:")
-    metodo = int(input())
-    if metodo == 1:
+    metodoi = int(input())
+    if metodoi == 1:
         metodo = Image.NEAREST
-    elif metodo == 2:
+    elif metodoi == 2:
         metodo = Image.BILINEAR
-    elif metodo == 3:
+    elif metodoi == 3:
         metodo = Image.BICUBIC
-    elif metodo == 4:
+    elif metodoi == 4:
         metodo = Image.ANTIALIAS
     else:
         print("Metodo inválido")
@@ -29,5 +29,5 @@ def main(fnames):
         for s in [2, 1.5, 0.5, 0.25, 0.125]:
             dimension = (int(width*s), int(height*s))
             new_im = im.resize(dimension, metodo)
-            new_im.save(f"./out/exec2-{name}-{s}.{ext}")
+            new_im.save(f"./out/exec2-{name}-{s}-{metodoi}.{ext}")
 main(sys.argv)
